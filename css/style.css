@@ -17,30 +17,24 @@ img{
 }
 
 main{
-  background-color: aquamarine;
+  background-color: black;
   height: calc(100vh - 100px);
 /* prendo 100vh del main e sottraggo l'altezza del footer */
-  overflow: hidden;
+  overflow: scroll;
+}
+
+main .container{
+  max-width: 1800px;
+  width: 98%;
+  height: 700px;
+  margin: 80px auto;
+  position: relative;
 }
 
 .container .row{
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 15px;
-}
-
-footer{
-  background-color: blueviolet;
-  height: 100px;
-}
-
-main .container{
-  background-color: brown;
-  max-width: 1800px;
-  width: 98%;
-  height: 700px;
-  margin: 80px auto;
-  position: relative;
 }
 
 .container .webcam{
@@ -57,4 +51,63 @@ main .container{
   position: absolute;
   left: 0;
   top: 126px;
+}
+/* /main */
+
+/* footer */
+
+footer{
+  background-color: #222222;
+  height: 100px;
+}
+
+footer .icone{
+  width: 98%;
+  margin: 0 auto;
+  align-items: center;
+  color: white;
+}
+
+footer .in{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.icone .sx{
+  align-items: center;
+  flex-direction: column;
+}
+
+footer section{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.caratteristiche{
+  font-size: 30px;
+  padding-bottom: 8px;
+}
+
+footer .arrow{
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer .end{
+  color: red;
+  background-color: #4a4a4a;
+  padding: 40px;
+}
+
+footer .end:hover{
+  background-color: #8b8888;
+}
+
+footer i:hover{
+  color: #4bc800;
+}
+
+.scritta:hover{
+  color: #4bc800;
 }
