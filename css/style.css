@@ -16,6 +16,34 @@ img{
   display: flex;
 }
 
+header{
+  background-color: black;
+  color: white;
+}
+
+header .speaker{
+  justify-content: flex-end;
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 98%;
+}
+
+.header-scritta{
+background-color: #4a4a4a;
+padding: 5px;
+border-radius: 5px;
+}
+
+.header-freccia{
+  padding-left: 10px
+}
+
+header .fa-maximize{
+  background-color: #4a4a4a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 main{
   background-color: black;
   height: calc(100vh - 100px);
@@ -27,7 +55,7 @@ main .container{
   max-width: 1800px;
   width: 98%;
   height: 700px;
-  margin: 80px auto;
+  margin: 50px auto;
   position: relative;
 }
 
