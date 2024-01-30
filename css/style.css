@@ -6,6 +6,7 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 img{
@@ -18,7 +19,7 @@ img{
 
 header{
   background-color: black;
-  color: white;
+  height: 100px;
 }
 
 header .speaker{
@@ -44,41 +45,38 @@ header .fa-maximize{
   border-radius: 5px;
 }
 
+/* main */
 main{
   background-color: black;
-  height: calc(100vh - 100px);
-/* prendo 100vh del main e sottraggo l'altezza del footer */
-  overflow: scroll;
+  height: calc(100vh - 200px);
+  overflow: auto;
 }
 
-main .container{
-  max-width: 1800px;
-  width: 98%;
-  height: 700px;
-  margin: 50px auto;
-  position: relative;
-}
-
-.container .row{
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 15px;
-}
-
-.container .webcam{
+main .webcam{
   width: 250px;
-  height: 150px;
+  height: 145px;
   position: relative;
+  margin: 7px 3px;
 }
 
-.container span{
-  color: white;
-  font-size: 12px;
-  background: rgba(50, 50, 50, 0.3);
-  padding: 5px 5px;
+main .webcam img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .webcam span{
   position: absolute;
+  bottom: 0;
   left: 0;
-  top: 126px;
+  background-color: rgba(0,0,0,.7);
+  padding: 6px;
+  font-size: 0.9rem;
+}
+
+.container-main{
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* /main */
 
@@ -90,10 +88,9 @@ footer{
 }
 
 footer .icone{
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
-  color: white;
 }
 
 footer .in{
@@ -104,6 +101,7 @@ footer .in{
 .icone .sx{
   align-items: center;
   flex-direction: column;
+  padding-left: 10px;
 }
 
 footer section{
@@ -122,20 +120,19 @@ footer .arrow{
   padding-right: 15px;
 }
 
-footer .end{
-  color: red;
+footer .btn,button{
+  height: 100%;
+  width: 130px;
   background-color: #4a4a4a;
-  padding: 40px;
-}
-
-footer .end:hover{
-  background-color: #8b8888;
+  color: red;
+  border: 0px;
+  cursor: pointer;
 }
 
 footer i:hover{
   color: #4bc800;
 }
 
-.scritta:hover{
-  color: #4bc800;
+footer button:hover{
+  background-color: rgb(193, 193, 193);
 }
